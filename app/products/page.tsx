@@ -90,7 +90,6 @@ export default function ProductsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Products</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.slice(0, 3).map((product) => {
-              const Active = product.icon;
               return (
                 <Link
                   key={product.slug}
@@ -106,7 +105,7 @@ export default function ProductsPage() {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-2">
-                      <Active className="size-4 text-[#FF6B1A]" />
+                      <Layers className="size-4 text-[#FF6B1A]" />
                       <span className="text-xs font-mono text-gray-500">{product.category}</span>
                     </div>
                     <h3 className="font-bold text-lg mb-2 group-hover:text-[#FF6B1A] transition-colors">
